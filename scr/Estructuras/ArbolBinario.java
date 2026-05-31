@@ -64,11 +64,11 @@ public class ArbolBinario<T extends Comparable<T>> {
         } else if (dato.compareTo(nodo.dato) > 0) {
             nodo.derecho = eliminarRecursivo(nodo.derecho, dato);
         } else {
-            // Nodo encontrado
+            
             if (nodo.izquierdo == null) return nodo.derecho;
             if (nodo.derecho == null) return nodo.izquierdo;
             
-            // Dos hijos: encontrar mínimo del subárbol derecho
+            
             nodo.dato = encontrarMinimo(nodo.derecho);
             nodo.derecho = eliminarRecursivo(nodo.derecho, nodo.dato);
         }
