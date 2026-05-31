@@ -6,13 +6,13 @@ import java.util.Random;
 
 public class ServicioMetro {
 
-    private Grafo<Estacion> redMetro;                    // Grafo para rutas y algoritmos
-    private TablaHash<String, Estacion> estacionesMap;   // Hash: código -> Estacion
-    private TablaHash<String, LineaMetro> lineasMap;     // Hash: código -> LineaMetro
-    private ListaEnlazada<Pasajero> pasajerosRegistrados; // Lista de pasajeros
-    private Cola<Pasajero> colaAtencion;                 // Cola para atención FIFO
-    private Pila<String> historialConsultas;             // Pila para historial LIFO
-    private ArbolBinario<String> arbolEstaciones;        // BST para búsqueda de nombres
+    private Grafo<Estacion> redMetro;                    
+    private TablaHash<String, Estacion> estacionesMap;   
+    private TablaHash<String, LineaMetro> lineasMap;     
+    private ListaEnlazada<Pasajero> pasajerosRegistrados; 
+    private Cola<Pasajero> colaAtencion;                 
+    private Pila<String> historialConsultas;            
+    private ArbolBinario<String> arbolEstaciones;       
     
     private double tarifaBase;
     private double tarifaReducida;
