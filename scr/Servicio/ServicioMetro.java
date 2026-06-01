@@ -109,7 +109,6 @@ public class ServicioMetro {
 
     public ListaEnlazada<LineaMetro> obtenerTodasLasLineas() {
         ListaEnlazada<LineaMetro> resultado = new ListaEnlazada<>();
-        // Implementación simplificada - en producción usar iterador en TablaHash
         return resultado;
     }
 
@@ -245,7 +244,6 @@ public class ServicioMetro {
 
         System.out.println("✅ Viaje exitoso: " + origen.getNombre() + " -> " + destino.getNombre());
         System.out.println("   Costo: $" + costo + " | Saldo restante: $" + pasajero.getSaldoTarjeta());
-        
         return true;
     }
 
@@ -356,8 +354,8 @@ public class ServicioMetro {
         agregarLinea(ruta2);
         agregarLinea(ruta3);
 
-        conectarEstaciones("E002", "E002"); // Campanario: R1 <-> R2
-        conectarEstaciones("E004", "E004"); // NQS Centro: R1 <-> R3
+        conectarEstaciones("E002", "E002"); 
+        conectarEstaciones("E004", "E004"); 
 
         Pasajero pasajero1 = new Pasajero("1111", "Juan", "Pérez");
         pasajero1.recargarTarjeta(10000);
