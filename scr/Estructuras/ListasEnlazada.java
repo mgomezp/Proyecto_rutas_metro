@@ -1,7 +1,6 @@
 package Estructuras;
 public class ListasEnlazada<T> {
-    
-    // nodo interno
+
     private static class Nodo<T> {
         T dato;
         Nodo<T> siguiente;
