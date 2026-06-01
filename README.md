@@ -24,9 +24,9 @@ Sistema integral para la gestión de rutas de metro, administración de pasajero
 
  Lista Enlazada : Almacenamiento de pasajeros, estaciones, resultados | O(n) 
 
- Pila (LIFO) : Historial de consultas de rutas | O(1) 
+ Pila : Historial de consultas de rutas | O(1) 
 
- Cola (FIFO) : Atención de pasajeros en orden de llegada | O(1) 
+ Cola : Atención de pasajeros en orden de llegada | O(1) 
 
  Árbol Binario : Búsqueda de estaciones por nombre | O(log n) 
 
