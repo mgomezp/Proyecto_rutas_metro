@@ -35,8 +35,7 @@ public class TablaHash<K, V> {
         }
         
         ListasEnlazada<ParClaveValor<K, V>> lista = tabla[indice];
-        
-        // busca si ya existe la clave para actualizar
+
         for (int i = 0; i < lista.getTamaño(); i++) {
             ParClaveValor<K, V> par = lista.obtener(i);
             if (par.clave.equals(clave)) {
@@ -44,8 +43,7 @@ public class TablaHash<K, V> {
                 return;
             }
         }
-        
-        // se inserta un nuevo par
+
         lista.agregar(new ParClaveValor<>(clave, valor));
         tamaño++;
         
